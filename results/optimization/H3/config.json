@@ -1,0 +1,63 @@
+{
+  "model": "mynet",
+  "data_root": "data/imagewoof2-160",
+  "output_root": ".",
+  "pretrained": false,
+  "num_classes": 10,
+  "seed": 42,
+  "split_seed": 42,
+  "val_fraction": 0.2,
+  "image_size": 160,
+  "augment": true,
+  "crop_scale": [
+    0.7,
+    1.0
+  ],
+  "flip_probability": 0.5,
+  "normalize": true,
+  "grayscale": false,
+  "channel": null,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "batch_size": 16,
+  "accumulation_steps": 1,
+  "run_name": "optimization/H3",
+  "epochs": 30,
+  "optimizer": "adamw",
+  "lr": 0.001,
+  "momentum": 0.9,
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "adam_eps": 1e-08,
+  "weight_decay": 0.0005,
+  "scheduler": "cosine",
+  "step_size": 10,
+  "gamma": 0.1,
+  "device": "cuda",
+  "amp": true,
+  "amp_init_scale": 1024.0,
+  "workers": 0,
+  "cpu_threads": 4,
+  "deterministic": true,
+  "deterministic_warn_only": true,
+  "channels": [
+    32,
+    64,
+    128,
+    192
+  ],
+  "blocks_per_stage": 2,
+  "head_channels": null,
+  "activation": "relu",
+  "dropout": 0.25
+}

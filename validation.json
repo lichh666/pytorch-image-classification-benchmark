@@ -1,0 +1,117 @@
+{
+  "torch": "2.9.1+cu126",
+  "torchvision": "0.24.1+cu126",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "checks": [
+    {
+      "experiment": "MyNet_Baseline",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.750827182489183,
+      "original_accuracy": 0.750827182489183,
+      "checkpoint_sha256_matches": true,
+      "seconds": 58.212
+    },
+    {
+      "experiment": "ResNet18",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.722321201323492,
+      "original_accuracy": 0.722321201323492,
+      "checkpoint_sha256_matches": true,
+      "seconds": 5.785
+    },
+    {
+      "experiment": "VGG16",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.6159328073301095,
+      "original_accuracy": 0.6159328073301095,
+      "checkpoint_sha256_matches": true,
+      "seconds": 26.896
+    },
+    {
+      "experiment": "H1",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.734283532705523,
+      "original_accuracy": 0.734283532705523,
+      "checkpoint_sha256_matches": true,
+      "seconds": 3.84
+    },
+    {
+      "experiment": "H2",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.7360651565283787,
+      "original_accuracy": 0.7360651565283787,
+      "checkpoint_sha256_matches": true,
+      "seconds": 4.498
+    },
+    {
+      "experiment": "H3",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.6350216340035633,
+      "original_accuracy": 0.6350216340035633,
+      "checkpoint_sha256_matches": true,
+      "seconds": 4.886
+    },
+    {
+      "experiment": "S1",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.7610078900483583,
+      "original_accuracy": 0.7610078900483583,
+      "checkpoint_sha256_matches": true,
+      "seconds": 5.216
+    },
+    {
+      "experiment": "S2",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.7454823110206159,
+      "original_accuracy": 0.7454823110206159,
+      "checkpoint_sha256_matches": true,
+      "seconds": 4.583
+    },
+    {
+      "experiment": "F1",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.6210231611096971,
+      "original_accuracy": 0.6210231611096971,
+      "checkpoint_sha256_matches": true,
+      "seconds": 5.649
+    },
+    {
+      "experiment": "F2",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.6630185797912955,
+      "original_accuracy": 0.6630185797912955,
+      "checkpoint_sha256_matches": true,
+      "seconds": 6.149
+    },
+    {
+      "experiment": "S3",
+      "samples": 3929,
+      "prediction_mismatches": 0,
+      "accuracy": 0.6744718757953678,
+      "original_accuracy": 0.6744718757953678,
+      "checkpoint_sha256_matches": true,
+      "seconds": 4.877
+    }
+  ],
+  "all_predictions_exact": true,
+  "review_date": "2026-11-21",
+  "fresh_full_training": false,
+  "archived_metrics_recomputed": true,
+  "checkpoints_distributed": false,
+  "smoke_test": {
+    "passed": true,
+    "checks": "Imports, stratification/disjointness, transforms, all three models forward/backward, optimizers/schedulers, checkpoint/plots, device fallback.",
+    "warning": "VGG16 CUDA adaptive_avg_pool2d backward is nondeterministic; original deterministic_warn_only setting retained."
+  }
+}
